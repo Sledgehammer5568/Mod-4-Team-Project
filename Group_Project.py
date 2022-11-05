@@ -6,15 +6,17 @@
 # Description: give a user choices and provide them with something
 #
 
-IN = int(input("""Hello What would you like to do today?
+IN = int(input("""
+Hello What would you like to do today?
 1. Get a nice message 100 times!
 2. Draw a triangle or square using turtle
 3. Do simple math!
 4. Create a password
-5. option 5
-6. option 6
-7. option 7
-8. option 8\n"""))
+5. Play video game
+6. Potato
+7. Make a painting
+8. Build a PC
+"""))
 
 if IN == 1:  # this option prints out a greeting using the users name
     name = input("What is your name?\n")
