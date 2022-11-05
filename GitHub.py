@@ -1,10 +1,10 @@
 # Emanuel Ramos, Jose Lopez, and David Serna
 # Options 1 - 4 are written by Emanuel ramos, last edited on 11/02/2022
 # Options 5 - 8 are written by David Serna, last edited on 10/29/2022
-# Options 9 are written by Jose Lopez, last edited on 11,02,2020
+# Option 9 was written by Jose Lopez, last edited on 11/04/2020
 # 11/06/2022
 #
-# Description: give a user choices and provide them with something
+# Description: Give a user choices and provide them with something.
 #
 
 IN = int(input("""
@@ -18,7 +18,6 @@ Hello What would you like to do today?
 7. Make a painting
 8. Build a PC
 9. Average game point scoring
-
 """))
 
 if IN == 1:  # this option prints out a greeting using the users name
@@ -144,10 +143,10 @@ elif IN == 4:  # this is a password generator found at
     for i in range(length):
         # Picking a random character from our
         # character list
-        randomchar = random.choice(characterList)
+        random_char = random.choice(characterList)
 
         # appending a random character to password
-        password.append(randomchar)
+        password.append(random_char)
 
     # printing password as a string
     print("The random password is " + "".join(password))
@@ -176,14 +175,18 @@ elif IN == 8:
     questions and READ the manual for every part if you have too!""")  # Well, this can be argued that this is a
     # short message. DS
 
-elif IN == 9:  #This program creates an average score out of three selected numbers/score.
-    print("""The Hawks vs the Eagles are facing each other for the World Championship reward. Three games will be played
-    and you want to figure out the average score of the three games the Hawks played.""")
+elif IN == 9:  # This program creates an average score out of three selected numbers/score.
+    print("""
+The Hawks vs the Eagles are facing each other for the World Championship reward. Three games will be played
+and you want to figure out the average score of the three games the Hawks played.
+    """)
     Game1 = int(input("What score did the Hawks earn in the first round?\n"))
     Game2 = int(input("What score did the Hawks earn in the second round?\n"))
     Game3 = int(input("What Score did the Hawks earn in the third round?\n"))
     AvgScore = (Game1 + Game2 + Game3) / 3
-    print("The average score of all three rounds is,",AvgScore, ".")
+    AvgScore = str(AvgScore)
+    print("The average score of all three rounds is," + AvgScore + ".")
 
 else:
     print("Wrong Input!")
+    
